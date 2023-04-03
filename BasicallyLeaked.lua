@@ -19,12 +19,12 @@ local PlayerTab = Window:MakeTab({
 })
 
 local PlayerSection = PlayerTab:AddSection({
-	Name = "Player"
+	Name = "Main"
 })
 
 
 PlayerSection:AddSlider({
-	Name = "Walkspeed",
+	Name = "Walkspeed (Change)",
 	Min = 16,
 	Max = 100,
 	Default = 5,
@@ -39,7 +39,30 @@ PlayerSection:AddButton({
 	Name = "Lyno Today !",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
-        OrionLib:Destroy()
+  	end    
+})
+PlayerSection:AddButton({
+	Name = "Reach",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+PlayerSection:AddButton({
+	Name = "Sprint",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+PlayerSection:AddButton({
+	Name = "KillAura",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+PlayerSection:AddButton({
+	Name = "Sub To Lyno Configs",
+	Callback = function()
+        
   	end    
 })
 --Player Tab End--
