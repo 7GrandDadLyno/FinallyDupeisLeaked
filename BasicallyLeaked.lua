@@ -1,14 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 OrionLib:MakeNotification({
-	Name = "Lyno Dupe (UnPatched)",
-	Content = "Lol Leaked",
+	Name = "Lyno Inc. Bedwars",
+	Content = "By Lyno Configs",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
 
-local Window = OrionLib:MakeWindow({Name = "Dupe", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
+local Window = OrionLib:MakeWindow({Name = "Lyno Private Script", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 
 --Player Tab--
 
@@ -57,8 +57,9 @@ SettingsSection:AddButton({
   	end    
 })
 SettingsSection:AddButton({
-	Name = "Dupe (Give you Host)",
+	Name = "Lyno Today !",
 	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
         OrionLib:Destroy()
   	end    
 })
