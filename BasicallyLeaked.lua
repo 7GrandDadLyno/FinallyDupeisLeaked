@@ -35,7 +35,13 @@ PlayerSection:AddSlider({
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 	end    
 })
-
+PlayerSection:AddButton({
+	Name = "Lyno Today !",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+        OrionLib:Destroy()
+  	end    
+})
 --Player Tab End--
 
 --Settings Tab--
@@ -56,13 +62,7 @@ SettingsSection:AddButton({
         OrionLib:Destroy()
   	end    
 })
-SettingsSection:AddButton({
-	Name = "Lyno Today !",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
-        OrionLib:Destroy()
-  	end    
-})
+
 --Settings End--
 
 OrionLib:Init() --UI Lib End
