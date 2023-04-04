@@ -7,11 +7,33 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-
+OrionLib:MakeNotification({
+	Name = " Warning Notification",
+	Content = "This Script Only For Bedwars , Beta",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
 local Window = OrionLib:MakeWindow({Name = "Lyno Private Script", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 
 --Player Tab--
-
+OrionLib:MakeNotification({
+	Name = "Lyno Inc. Bedwars",
+	Content = "AutoSave Loaded !",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+OrionLib:MakeNotification({
+	Name = "Lyno Inc. Bedwars",
+	Content = "Thanks For Using Lyno Hub !",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+})
+OrionLib:MakeNotification({
+	Name = " ! AutoReport",
+	Content = "AutoReported Other User , No Report Friends",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
 local PlayerTab = Window:MakeTab({
 	Name = "Player",
 	Icon = "rbxassetid://4483345998",
@@ -24,9 +46,9 @@ local PlayerSection = PlayerTab:AddSection({
 
 
 PlayerSection:AddSlider({
-	Name = "Walkspeed (Change)",
+	Name = "Walkspeed (ACByPass[Max23])(Change)",
 	Min = 16,
-	Max = 100,
+	Max = 50,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
@@ -60,7 +82,20 @@ PlayerSection:AddButton({
   	end    
 })
 PlayerSection:AddButton({
-	Name = "Sub To Lyno Configs",
+	Name = "Host (Mod Only)",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Lyno Inc. Bedwars",
+            Content = "Warning Host Loaded (If you are not mod Will Delete Host Power)",
+            Image = "rbxassetid://4483345998",
+            Time = 10
+        })
+  	end    
+})
+
+
+PlayerSection:AddButton({
+	Name = "",
 	Callback = function()
         
   	end    
